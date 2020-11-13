@@ -1,7 +1,23 @@
 .card {
   transition-duration: 120ms;
   transition-timing-function: ease-in-out;
+  img {
+    opacity: 0.85;
+  }
+}
+
+.card:hover {
+  transform:scale(1.025);
 }
 .card:hover {
-  transform:scale(1.05);
+  a {
+    overflow: hidden;
+  }
+  img {
+    opacity: 1;
+    transform:scale(1.075);
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+
+  }
 }
