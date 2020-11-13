@@ -12,7 +12,7 @@
       <div class="cocktail-card card">
         <a href="cocktails/<%= cocktail.id %>">
           <% if cocktail.photo.attached? %>
-            <%= cl_image_tag cocktail.photo.key, height: 200, width: 400, crop: :fill, class: 'card-img-top' %>
+            <%= cl_image_tag cocktail.photo.key, height: 220, width: 400, crop: :fill, class: 'card-img-top ' %>
           <% else %>
             <img src="https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" class="card-img-top" alt="a cocktail">
           <% end %>
