@@ -1,0 +1,7 @@
+.card {
+  transition-duration: 120ms;
+  transition-timing-function: ease-in-out;
+}
+.card:hover {
+  transform:scale(1.05);
+}
