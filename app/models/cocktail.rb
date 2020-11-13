@@ -5,3 +5,12 @@ class Cocktail < ApplicationRecord
   validates :name, presence: true, uniqueness: true
   validates :photo, presence: true
 end
+
+
+ def set_song
+    @song = Song.find(params[:song_id])
+  end
+
+  def review_params
+    params.require(:review).permit(:content)
+  end
