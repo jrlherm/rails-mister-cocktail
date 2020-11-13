@@ -1,11 +1,15 @@
-<div class="container">
-  <h1>
-    Add a new dose
-  </h1>
+<div class="banner">
+  <div class="container text-center">
+    <h1 class="mt-5">Add a new dose</h1>
+  </div>
+</div>
 
-  <%= simple_form_for [@cocktail, @dose] do |f| %>
-    <%= f.input :description %>
-    <%= f.association :ingredient %>
-    <%= f.submit 'Add', class: 'btn btn-primary' %>
-  <% end %>
+<div class="container mt-3">
+  <div class="col-8 m-auto">
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.input :description %>
+      <%= f.association :ingredient %>
+      <%= f.submit 'Add', class: 'btn btn-primary' %>
+    <% end %>
+  </div>
 </div>
