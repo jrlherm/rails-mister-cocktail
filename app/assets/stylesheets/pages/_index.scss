@@ -1,2 +1,9 @@
 // Import page-specific CSS files here.
 @import "home";
+
+
+.cocktails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}

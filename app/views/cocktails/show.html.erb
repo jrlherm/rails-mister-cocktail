@@ -29,16 +29,22 @@
                         <% else %>
                           <ul>
                               <% @cocktail.doses.each do |dose| %>
-                              <li>
-                                  <%= dose.description %> of
-                                  <%= dose.ingredient.name %>
-                              </li>
+                                <li>
+                                    <%= dose.description %> of
+                                    <%= dose.ingredient.name %>
+                                </li>
+
+                                <%= link_to cocktail_dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
+                                  <i class="fa fa-trash destroy_dose"></i>
+                                <% end %>
+
                               <% end %>
                           </ul>
                         <% end %>
                         <div class="text-right">
                             <%= link_to 'Add a new dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-outline-primary rounded-pill'%>
                         </div>
+
                     </div>
                 </div>
             </div>
