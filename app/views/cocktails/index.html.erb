@@ -10,11 +10,25 @@
   <div class="cocktails">
     <% @cocktails.each do | cocktail | %>
       <div class="cocktail-card card">
-        <img src="https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" class="card-img-top" alt="a cocktail">
+        <% if cocktail.photo.attached? %>
+          <%= cl_image_tag cocktail.photo.key, height: 200, width: 400, crop: :fill, class: 'card-img-top' %>
+        <% else %>
+          <img src="https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" class="card-img-top" alt="a cocktail">
+        <% end %>
+
         <div class="card-title">
           <h4><%= link_to cocktail.name, cocktail_path(cocktail) %></h4>
         </div>
       </div>
     <% end %>
   </div>
+
+  <!-- for face detection -->
+  <%#= cl_image_tag("uegzuoxowhk2wzjlmgn8.jpg",
+        width: 150, height: 150, crop: :thumb, gravity: :face) %>
+
+  <%#= cl_image_tag("ry09tsybjlvorktw4xhj",
+        width: 400, height: 300, crop: :fill) %>
+
+
 </div>
