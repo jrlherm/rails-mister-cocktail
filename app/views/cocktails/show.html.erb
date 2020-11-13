@@ -29,19 +29,19 @@
                     <h4 class="card-title">Doses</h4>
                     <div class="card-content">
                         <% if @cocktail.doses.empty? %>
-                        <p>Cocktail has no doses. But you can add some 👍</p>
+                         <p>Cocktail has no doses. But you can add some 👍</p>
                         <% else %>
-                        <ul>
+                          <ul>
                             <% @cocktail.doses.each do |dose| %>
-                            <li>
+                              <li>
                                 <%= dose.description %> of
                                 <%= dose.ingredient.name %>
-                            </li>
-                            <%= link_to cocktail_dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
-                            <i class="fa fa-trash destroy_dose"></i>
+                                <%= link_to cocktail_dose_path(dose), method: :delete, data: { confirm: "Are you sure?" }, class: 'ml-auto' do %>
+                                  <i class="fa fa-trash destroy_dose"></i>
+                                <% end %>
+                              </li>
                             <% end %>
-                            <% end %>
-                        </ul>
+                          </ul>
                         <% end %>
                         <div class="text-right">
                             <%= link_to 'Add a new dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-outline-primary rounded-pill'%>
