@@ -1,0 +1,41 @@
+<div class="cocktails-grid">
+
+  <div class="about">Rails Cockttails, the place to store <em>all your cocktails</em>.<br>
+    <br>
+     Actually, <strong>you can</strong> add new cocktails and doses.
+  </div>
+
+  <a href="#" class="m a-img-txt"><img src="https://dummyimage.com/400x600/6100ff/fff&text=%20">
+    <span class="a-txt">Mojito</span>
+  </a>
+  <a href="#" class="s a-img-txt"><img src="https://dummyimage.com/400x288/00B3ED/fff&text=%20">
+    <span class="a-txt">Moscow mule</span>
+  </a>
+  <a href="#" class="m a-img-txt"><img src="https://dummyimage.com/400x600/FFDE13/fff&text=%20">
+    <span class="a-txt">Spritz</span>
+  </a>
+  <a href="#" class="s a-img-txt"><img src="https://dummyimage.com/400x288/FF5046/fff&text=%20">
+    <span class="a-txt">Sex on the beach</span>
+  </a>
+  <a href="#" class="l a-img-txt"><img src="https://dummyimage.com/824x600/1FD0C0/fff&text=%20">
+    <span class="a-txt">Mojito</span>
+  </a>
+  <a href="#" class="m a-img-txt"><img src="https://dummyimage.com/400x600/FF5046/fff&text=%20">
+    <span class="a-txt">Moscow mule</span>
+  </a>
+  <a href="#" class="s a-img-txt"><img src="https://dummyimage.com/400x288/FFDE13/fff&text=%20">
+    <span class="a-txt">Mojito</span>
+  </a>
+  <a href="#" class="m a-img-txt"><img src="https://dummyimage.com/400x600/FF6600/fff&text=%20">
+    <span class="a-txt">Sex on the beach</span>
+  </a>
+  <a href="#" class="s a-img-txt"><img src="https://dummyimage.com/400x288/6100ff/fff&text=%20">
+    <span class="a-txt">Mojito</span>
+  </a>
+  <a href="#" class="m a-img-txt"><img src="https://dummyimage.com/400x600/00B3ED/fff&text=%20">
+    <span class="a-txt">Mojito</span>
+  </a>
+  <a href="#" class="s a-img-txt"><img src="https://dummyimage.com/400x288/FF5046/fff&text=%20">
+    <span class="a-txt">Moscow mule</span>
+  </a>
+</div>

@@ -1,0 +1,30 @@
+<div class="banner" style="height: 60vh;">
+  <div class="container">
+      <div class="row">
+          <h1 class="text-center mt-3">All your cocktails 🍹</h1>
+      </div>
+  </div>
+</div>
+
+<div class="container mt-3 mb-3">
+<div class="cocktails">
+    <div class="row">
+      <#% @cocktails.each do | cocktail | %>
+        <div class="cocktail-card card">
+          <a href="cocktails/<#%= cocktail.id %>">
+            <#% if cocktail.photo.attached? %>
+              <#%= cl_image_tag cocktail.photo.key, height: 220, width: 400, crop: :fill, class: 'card-img-top ' %>
+            <#% else %>
+              <img src="https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" class="card-img-top" alt="a cocktail">
+            <#% end %>
+          </a>
+          <div class="card-body">
+            <div class="card-title">
+              <h4><#%= cocktail.name %></h4>
+            </div>
+          </div>
+        </div>
+      <#% end %>
+    </div>
+  </div>
+</div>
